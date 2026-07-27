@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+
+:root {
+    /* Brand Theme Colors */
+    --color-primary: #a855f7;
+    --color-primary-glow: rgba(168, 85, 247, 0.25);
+    --color-secondary: #ec4899;
+    --color-secondary-glow: rgba(236, 72, 153, 0.25);
+    --color-accent: #06b6d4;
+
+
+    /* Base & Layout Backgrounds */
+    --color-bg-base: #060709;
+    --color-bg-section: #0c0d14;
+    --color-bg-footer: #161922;
+    --color-surface: #11131a;
+    --color-surface-muted: #1e212f;
+
+
+    /* Borders */
+    --color-border: rgba(255, 255, 255, 0.07);
+
+
+    /* Typography Text Colors */
+    --white: #ffffff;
+    --color-text-body: #cbd5e1;
+    --color-text-muted: #9fa6b2;
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 12px 36px rgba(0, 0, 0, 0.7);
+    --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.9);
+    --gradient-accent: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    --gradient-secondary: linear-gradient(135deg, var(--color-accent) 0%, #3b82f6 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--white);
+}
+
+
+html {
+    font-size: 16px;
+}
+
+
+h1 {
+    font-size: clamp(2.4rem, 6vw, 5rem);
+}
+
+h2 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+h3 {
+    font-size: clamp(1.2rem, 2.5vw, 1.75rem);
+}
+
+h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+}
+
+
+small {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+strong {
+    color: var(--white);
+    font-weight: 600;
+}
+
+em {
+    color: var(--color-text-body);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+     background-color:rgb(216, 220, 238) ;
+   
+    opacity: 1;
+}
+header{
+  height: 300px;
+  background: #1A2436;
+text-align: center;
+}
+.shyamji h1{
+  padding-top: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  letter-spacing: 0.1rem;
+  font-weight: 1000;
+}
+.shyamji h1:hover{
+  color: rgb(199, 8, 8);
+}
+.shyamji p{
+  color: white;
+  padding: 4.7px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family:url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap'); ;
+}
+.shyamji nav{
+  gap: 20px;
+  padding-top: 15px;
+}
+.shyamji nav a{
+  
+  width: 30px;
+  height: 40px;
+  background:rgba(108, 99, 99, 0.29);
+  border-radius: var(--radius-lg);
+  padding: 12px;
+  color: white;
+  
+}
+.shyamji nav a:hover{
+  background-color: rgb(237, 103, 103);
+   box-shadow: 0 0 10px rgb(244, 155, 155);
+   color: black;
+}
+main{
+  background-color:rgb(216, 220, 238) ;
+  padding-top: 10px; 
+}
+#about{
+   margin: 40px auto;
+  max-width: 900px;
+  padding: 40px;
+   border-radius: var(--radius-md);
+   background: white;
+   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+#about h2{
+   font-family: poppins;
+  color: black;
+  margin-top: 40px;
+  margin-left: 30px;
+  /* padding-left: 20px;
+  padding-top: 40px; */
+  font-weight: 900;
+  border-left: 14px solid var(--color-primary);
+
+}
+#about h2:hover{
+  border-left: 14px solid #ec4899;
+
+}
+.self figure img{
+  object-fit: cover;
+  width: 200px;
+  height: 240px;
+  margin-left: 350px;
+   border: 5px solid var(--color-primary);
+  border-radius: 50%;
+}
+.self figure img:hover{
+  object-fit: cover;
+  border: 5px solid #ec4899 ;
+  border-radius: 0%;
+  transform: translateY(-20px);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+
+}
+.self figure figcaption em{
+  color: black;
+  margin-left:260px ;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#about p{
+  padding-top:50px ;
+  font-size: 30px;
+  color: #0d4348;
+font-weight: 500;
+ line-height: 29px;
+}
+#about p strong{
+  color: black;
+  text-transform: uppercase;
+}
+
+#about p:hover{
+  color: #ec4899;
+}
+
+
+#project{
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 40px;
+  
+ 
+    border-radius: var(--radius-md);
+   
+    background: white;
+   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+#project h2{
+  
+ margin-top: 40px;
+   color: black;
+ padding: 0 14px;
+ font-size: 50px;
+  font-family: poppins;
+  font-weight: 700;
+  border-left: 14px solid var(--color-primary);
+  margin-left: 34px;
+  margin-bottom: 20px;
+}
+#project h2:hover{
+   border-left: 14px solid #ec4899;
+}
+.project{
+  display: flex;
+  gap: 40px;
+margin-bottom: 20px;
+}
+.project article{
+ background-color: rgb(216, 220, 238);
+    border: 1px solid transparent;
+    /* transition: all 0.3s ease; */
+  border-radius: var(--radius-md);
+ padding: 20px 20px;
+  flex: 1;
+}
+.project article:hover{
+  transform: translateY(-7px);
+ /* border:  solid var(--color-secondary); */
+ 
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+
+ 
+}
+/* .project article[id="skills"]{
+  margin-left: 40px;
+  margin-top: 20px;
+} */
+.project article h3{
+  color: black;
+  /* padding: top right bottom left; */
+  padding:45px 0 0 10px ;
+  font-size: 30px;
+  font-weight: 600;
+}
+.portfolio p{
+  margin-bottom: 50px;
+  font-family: poppins;
+  font-weight: 500;
+  color: black;
+  font-size: 0.9rem;
+}
+.project p strong{
+ color: black;
+ font-weight: 1000;
+
+}
+.todo p{
+  font-family: poppins;
+  font-weight: 500;
+  color: black;
+  font-size: 0.9rem;
+  margin-bottom: 79px;
+}
+.project article a{
+  border: none;
+  border-radius: 20px;
+  background:var(--color-surface) ;
+  padding: 10px;
+  color: white;
+  font-family: var(--font-body);
+}
+.project article a:hover{
+  color: black;
+  background-color: #ec4899;
+}
+#skills ul{
+  list-style:disc;
+  padding-top: 20px;
+  padding-left: 40px;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#skills ul li:hover{
+  color: red;
+}
+#skills h3{
+  font-family: poppins;
+  font-size: 35px;
+  
+}
+#intro{
+   margin: 40px auto;
+   max-width: 900px;
+   padding: 40px;
+   border-radius: var(--radius-md);
+   background: white;
+   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+   margin-bottom: 20px;
+  
+}
+#intro h2{
+  margin-top: 40px;
+  color: black;
+  font-size: 50px;
+  font-family: poppins;
+  border-left: 14px solid #a855f7;
+  margin-left: 34px;
+}
+#intro h2:hover{
+   border-left: 14px solid #ec4899;
+}
+#intro article{
+  text-align: center;
+}
+#intro video{
+  margin-top: 20px;
+  border-radius:20px;
+  width: 100%;
+  height: 400px;
+  border: 8px solid grey;
+}
+#intro video:hover{
+  
+  border:8px solid;
+  border-color: #ec4899;
+  border-bottom-color: #a855f7;
+  border-left-color: #a855f7;
+}
+#intro p{
+  text-align: center;
+  font-size: 40px;
+  color: rgb(255, 12, 101);
+}
+#intro p:hover{
+color: black;
+}
+#contact{
+  background: #1A2436;
+  max-width: 900px;
+ margin:  auto;
+ padding: 40px;
+ border-radius: 20px;
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+ height: 700px;
+}
+footer{
+   background-color:rgb(90, 91, 96) ;
+  padding: 40px  0; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+#contact h2{
+  font-family: poppins;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-left: 34px;
+  border-left: 14px solid #3b82f6;
+  color:white;
+}
+#contact form{
+  margin-left:34px ;
+  margin-top: 25px;
+}
+#contact  form p{
+  color: white;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  
+}
+
+#contact input{
+  height: 60px;
+  width: 600px;
+  border: 2px solid rgb(146, 143, 143);
+  background-color:  #1A2436;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  padding-left: 30px;
+}
+#contact form button{
+  background-color:#ec4899;
+  color: black;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 5px;
+  margin-left: 530px;
+}
+#contact form button:hover{
+  background-color: #a855f7;
+  transform: translateY(-9px);
+  box-shadow: 0 5px 10px #a855f7;
+}
+#last{
+  border-top: 1px solid #999a9d;
+  margin-top: 50px;
+  
+}
+#last p{
+margin-top:10px ;
+font-size: 19px;
+border-left: 3px solid red;
+}
+
+
+#last a{
+  font-size: 20px;
+}
+
